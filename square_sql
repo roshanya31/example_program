@@ -1,0 +1,52 @@
+Schema SQL
+1 create table test3(usn integer primary key,name varchar(10),phonenumber integer,branch varchar(3));
+2
+    insert into test3 values(1,'roshanya',1234,'cs');
+3
+    insert into test3 values(2,'raksha',5678,'is');
+4
+    insert into test3 values(3,'rohith',9514,'ec');
+5
+    insert into test3 values(4,'sathish',8237,'me');
+6
+    insert into test3 values(5,'mohini',4681,'cv');
+    
+Query SQL
+1  select * from test3;
+
+
+Results
+**Schema (MySQL v5.7)**
+
+    create table test3(usn integer primary key,name varchar(10),phonenumber integer,branch varchar(3));
+                                                                                                   insert into test3 values(1,'roshanya',1234,'cs');
+                                                                                                   insert into test3 values(2,'raksha',5678,'is');
+                                                                                                   insert into test3 values(3,'rohith',9514,'ec');
+                                                                                                   insert into test3 values(4,'sathish',8237,'me');
+                                                                                                   insert into test3 values(5,'mohini',4681,'cv');
+
+---
+
+**Query #1**
+
+    select * from test3;
+
+| usn | name     | phonenumber | branch |
+| --- | -------- | ----------- | ------ |
+| 1   | roshanya | 1234        | cs     |
+| 2   | raksha   | 5678        | is     |
+| 3   | rohith   | 9514        | ec     |
+| 4   | sathish  | 8237        | me     |
+| 5   | mohini   | 4681        | cv     |
+
+---
+
+[View on DB Fiddle](https://www.db-fiddle.com/f/e6KrumHxK31SHEd3PEuMoU/0)
+Copy as Markdown
+Query #1 Execution time: 1ms
+usn	name	phonenumber	branch
+1	roshanya	1234	cs
+2	raksha	5678	is
+3	rohith	9514	ec
+4	sathish	8237	me
+5	mohini	4681	cv
